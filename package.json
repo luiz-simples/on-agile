@@ -1,0 +1,19 @@
+{
+  "name": "OnAgile",
+  "version": "0.0.1",
+  "description": "Continuation of OnTrack",
+  "main": "server.js",
+  "scripts": {
+    "test": "gulp tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:luiz-simples/on-agile.git"
+  },
+  "author": "Luiz Amorim <luiz.simples@gmail.com>",
+  "license": "The Unlicense",
+  "bugs": {
+    "url": "https://github.com/luiz-simples/on-agile/issues"
+  },
+  "homepage": "https://github.com/luiz-simples/on-agile"
+}
