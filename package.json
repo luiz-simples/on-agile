@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/luiz-simples/on-agile",
   "devDependencies": {
-    "gulp": "^3.6.0"
+    "gulp": "^3.6.0",
+    "gulp-nodeunit": "0.0.5"
   }
 }

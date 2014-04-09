@@ -1,13 +1,8 @@
-var gulp = require('gulp');
-
-gulp.task('server', function() {
-  //TO-DO
-});
+var gulp     = require('gulp'),
+    nodeunit = require('gulp-nodeunit');
 
 gulp.task('tests', function() {
-  //TO-DO
-});
-
-gulp.task('deploy', function() {
-  //TO-DO
+  gulp.src('tests/unit/**/*.js').pipe(nodeunit({
+    reporter: 'default'
+  }));
 });
