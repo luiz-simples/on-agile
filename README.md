@@ -3,11 +3,12 @@ OnAgile
 
 Install & Run
 -----------
-  1. Install NodeJS: http://nodejs.org/
-  2. run this code block in your terminal
+  1. [Install NodeJS](http://nodejs.org/)
+  2. [Install and configure Git](https://help.github.com/articles/set-up-git)
+  3. run this code block in your terminal
 
 ```
-git clone [git@github.com:luiz-simples/on-agile.git](git@github.com:luiz-simples/on-agile.git)
+git clone git@github.com:luiz-simples/on-agile.git
 cd on-agile
 npm install
 gulp tests
