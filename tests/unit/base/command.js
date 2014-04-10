@@ -1,5 +1,5 @@
 var CommandBase = require('../../../src/base/command');
-var oneAssert = 1
+var oneHit = 1
 var yes = true
 var nothing = false
 
@@ -9,7 +9,7 @@ exports.CommandBase = {
       return yes;
     });
 
-    test.expect(oneAssert);
+    test.expect(oneHit);
     test.ok(commandBase.execute());
     test.done();
   },
@@ -19,7 +19,7 @@ exports.CommandBase = {
       return nothing;
     });
 
-    test.expect(oneAssert);
+    test.expect(oneHit);
     test.equal(commandBase.execute(), nothing);
     test.done();
   },
@@ -34,7 +34,7 @@ exports.CommandBase = {
     var randomData = Date.now();
     var tempAction = new TempAction(randomData);
 
-    test.expect(oneAssert);
+    test.expect(oneHit);
     test.equal(tempAction.execute(), randomData);
     test.done();
   }

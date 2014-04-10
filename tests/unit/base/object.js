@@ -1,5 +1,6 @@
 var ObjectBase = require('../../../src/base/object');
-var oneAssert = 1
+var oneHit = 1
+var twoHits = 2
 var nameObjectBase = "ObjectBase"
 var nameClassInherited = "ClassInherited"
 
@@ -9,8 +10,15 @@ exports.ObjectBase = {
     callback();
   },
 
+  "Should be type Object and ObjectBase": function(test) {
+    test.expect(twoHits);
+    test.ok(this.objectBase instanceof Object);
+    test.ok(this.objectBase instanceof ObjectBase);
+    test.done();
+  },
+
   "Should return the class name 'ObjectBase' when not extend ObjectBase class": function(test) {
-    test.expect(oneAssert);
+    test.expect(oneHit);
     test.equal(this.objectBase.className(), nameObjectBase);
     test.done();
   },
@@ -22,7 +30,7 @@ exports.ObjectBase = {
 
     var classInherited = new ClassInherited();
 
-    test.expect(oneAssert);
+    test.expect(oneHit);
     test.equal(classInherited.className(), nameClassInherited);
     test.done();
   }
